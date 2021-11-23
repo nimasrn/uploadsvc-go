@@ -6,7 +6,7 @@ This service is for uploading images or other files in multiple chunks in Go (Go
 With having to be able to upload in multiple chunks the client could have paused/resume the upload process or send smaller payloads in different networks.
 this is just for using case study but it aims to be almost production-ready so the Redis and Disk storage is connected to volumes in docker so we could easily scale out the containers.
 
-I tried to use [`go-clean-arch`](https://github.com/bxcodec/go-clean-arch.git) for the project structure over the hexagonal architecture as it was more easier and based on Rule of Clean Architecture by Uncle Bob.
+I tried to use [`go-clean-arch`](https://github.com/bxcodec/go-clean-arch.git) for the project structure over the hexagonal architecture as it was more suitable and based on Rule of Clean Architecture by Uncle Bob.
 
 This project has 4 Domain layer :
 
