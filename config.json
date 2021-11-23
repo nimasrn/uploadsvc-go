@@ -1,0 +1,17 @@
+{
+  "debug": false,
+  "release": true,
+  "server": {
+    "address": ":4444",
+    "baseURI": ""
+  },
+  "context":{
+    "timeout":2
+  },
+  "redis": {
+      "host": "redis",
+      "port": "6379"
+  },
+  "disk": "./disk/"
+
+}

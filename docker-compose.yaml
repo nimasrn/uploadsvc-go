@@ -1,0 +1,24 @@
+version: "2.3"
+services:
+  main_app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: uploadsvc-go
+    ports:
+      - 4444:4444
+    depends_on:
+      - redis
+    volumes:
+      - ./config.json:/app/config.json
+      - app_data:/app/disk/
+  redis:
+    image: redis:6.2.6
+    container_name: redis
+    ports:
+      - 6379:6379
+    volumes:
+      - redis_data:/data
+volumes:
+  app_data:
+  redis_data:
