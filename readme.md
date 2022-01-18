@@ -53,7 +53,6 @@ $ make stop
 
 ## The API
 
-Our executable expects your HTTP API to implement the following endpoints:
 
 - **Registering an image**:
 
